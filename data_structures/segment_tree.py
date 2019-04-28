@@ -44,6 +44,16 @@ class SegmentTree:
                + self.query(right, mid + 1, tree_end, range_start, range_end)
 
     def update(self, node, tree_start, tree_end, range_start, range_end, value):
+        """
+        Some description...
+        :param node:
+        :param tree_start:
+        :param tree_end:
+        :param range_start:
+        :param range_end:
+        :param value:
+        :return:
+        """
         if range_start > tree_end or range_end < tree_start:
             return 0
 
